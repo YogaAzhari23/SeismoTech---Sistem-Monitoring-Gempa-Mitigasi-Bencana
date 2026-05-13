@@ -1,0 +1,1 @@
+# SeismoTech---Sistem-Monitoring-Gempa-Mitigasi-Bencana
