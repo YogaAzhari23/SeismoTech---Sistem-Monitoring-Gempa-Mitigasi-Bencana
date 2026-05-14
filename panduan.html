@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Pengguna | SeismoTech</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0b0f1a; }
+        .font-header { font-family: 'Orbitron', sans-serif; }
+        .glass-card { 
+            background: rgba(30, 41, 59, 0.5); 
+            border: 1px solid rgba(51, 65, 85, 0.5); 
+            backdrop-filter: blur(12px); 
+        }
+    </style>
+</head>
+<body class="text-slate-300 antialiased pb-20">
+
+    <nav class="border-b border-slate-800 bg-[#0f172a]/80 backdrop-blur-xl sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <div class="w-10 h-10 bg-red-600 rounded-lg flex items-center justify-center font-header font-bold text-white text-xl">ST</div>
+                <h1 class="font-header text-lg font-bold tracking-widest text-white uppercase">Seismo<span class="text-red-500">Tech</span> <span class="text-[10px] ml-2 text-slate-500 tracking-normal">v1.0</span></h1>
+            </div>
+            <a href="index.html" class="p-2.5 bg-slate-800 hover:bg-red-600 text-slate-400 hover:text-white rounded-xl transition-all border border-slate-700/50 flex items-center justify-center group" title="Kembali ke Beranda">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 group-hover:scale-110 transition-transform">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-1.125 1.125-1.125V9.75M8.25 21h8.25" />
+                </svg>
+            </a>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-6 mt-12">
+        <header class="text-center mb-16">
+            <h2 class="font-header text-3xl md:text-4xl font-bold text-white mb-4 tracking-tighter">PETUNJUK PENGOPERASIAN</h2>
+            <p class="text-slate-500 uppercase tracking-[0.3em] text-xs">Sistem Integrasi Mitigasi Bencana Nasional</p>
+        </div>
+
+        <div class="space-y-8">
+            <section class="glass-card p-8 rounded-[2rem] border-l-4 border-l-red-600 hover:scale-[1.02] transition-transform">
+                <div class="flex items-start gap-6">
+                    <div class="text-4xl bg-slate-800/50 p-4 rounded-2xl">🚨</div>
+                    <div>
+                        <h3 class="font-header text-red-500 font-bold text-xl mb-3 tracking-wide">07. PANEL INFORMASI TERKINI</h3>
+                        <p class="text-sm leading-relaxed text-slate-400 mb-4">
+                            Panel di sisi kiri menampilkan ringkasan data dari gempa terbaru yang terdeteksi oleh sistem. Berikut adalah detail informasi yang ditampilkan:
+                        </p>
+                        <ul class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <li class="bg-slate-800/30 p-4 rounded-xl border border-slate-700/50">
+                                <span class="block text-white font-bold text-xs uppercase mb-1">Kekuatan (Magnitudo)</span>
+                                <p class="text-[11px] text-slate-500">Angka numerik (contoh: M 5.8) yang menunjukkan besarnya energi seismik yang dilepaskan di pusat gempa.</p>
+                            </li>
+                            <li class="bg-slate-800/30 p-4 rounded-xl border border-slate-700/50">
+                                <span class="block text-white font-bold text-xs uppercase mb-1">Wilayah / Pusat Gempa</span>
+                                <p class="text-[11px] text-slate-500">Keterangan lokasi geografis atau daerah terdekat dari titik pusat terjadinya guncangan.</p>
+                            </li>
+                            <li class="bg-slate-800/30 p-4 rounded-xl border border-slate-700/50">
+                                <span class="block text-white font-bold text-xs uppercase mb-1">Titik Koordinat</span>
+                                <p class="text-[11px] text-slate-500">Data presisi Lintang (LS) dan Bujur (BT) yang digunakan sistem untuk memplot lokasi di peta interaktif.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="glass-card p-8 rounded-[2rem]">
+                <div class="flex items-start gap-6">
+                    <div class="text-4xl bg-slate-800/50 p-4 rounded-2xl">📡</div>
+                    <div>
+                        <h3 class="font-header text-red-500 font-bold text-xl mb-3 tracking-wide">01. MONITORING REAL-TIME</h3>
+                        <p class="text-sm leading-relaxed text-slate-400">
+                            Dashboard utama secara otomatis melakukan <b class="text-white">Syncing setiap 60 detik</b> dengan server BMKG. Titik merah berdenyut pada peta menandakan lokasi persis pusat gempa (episenter) yang baru saja terjadi.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="glass-card p-8 rounded-[2rem]">
+                <div class="flex items-start gap-6">
+                    <div class="text-4xl bg-slate-800/50 p-4 rounded-2xl">🔔</div>
+                    <div>
+                        <h3 class="font-header text-orange-500 font-bold text-xl mb-3 tracking-wide">02. DESKTOP ALERTS</h3>
+                        <p class="text-sm leading-relaxed text-slate-400">
+                            Klik <b class="text-white">"Aktifkan Desktop Alert"</b> untuk memberikan izin notifikasi. Fitur ini memungkinkan Anda menerima peringatan bahaya di layar komputer Anda meskipun tab browser sedang diminimize atau tidak aktif.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="glass-card p-8 rounded-[2rem]">
+                <div class="flex items-start gap-6">
+                    <div class="text-4xl bg-slate-800/50 p-4 rounded-2xl">🎒</div>
+                    <div>
+                        <h3 class="font-header text-green-500 font-bold text-xl mb-3 tracking-wide">03. TAS SIAGA BENCANA</h3>
+                        <p class="text-sm leading-relaxed text-slate-400">
+                            Gunakan checklist interaktif untuk memverifikasi kesiapan <b class="text-white">Tas Siaga Bencana (TSB)</b> Anda. Status centang akan disimpan secara permanen di perangkat Anda menggunakan teknologi <i>LocalStorage</i>.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="glass-card p-8 rounded-[2rem] border-l-4 border-l-purple-500">
+                <div class="flex items-start gap-6">
+                    <div class="text-4xl bg-slate-800/50 p-4 rounded-2xl">📊</div>
+                    <div>
+                        <h3 class="font-header text-purple-500 font-bold text-xl mb-3 tracking-wide">04. DATABASE RIWAYAT</h3>
+                        <p class="text-sm leading-relaxed text-slate-400">
+                            Tombol <b class="text-white">"Lihat Riwayat Selengkapnya"</b> akan mengarahkan Anda ke tabulasi data 15 gempa terakhir (M 5.0+). Fitur ini sangat berguna untuk melihat tren aktivitas seismik di berbagai wilayah Indonesia dalam beberapa hari terakhir.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="glass-card p-8 rounded-[2rem] border-l-4 border-l-yellow-500">
+                <div class="flex items-start gap-6">
+                    <div class="text-4xl bg-slate-800/50 p-4 rounded-2xl">⚠️</div>
+                    <div>
+                        <h3 class="font-header text-yellow-500 font-bold text-xl mb-3 tracking-wide">05. PANDUAN DARURAT</h3>
+                        <p class="text-sm leading-relaxed text-slate-400">
+                            Tombol <b class="text-white">"Panduan darurat"</b> akan memunculkan panduan langkah demi langkah saat gempa terjadi. Panduan ini mencakup instruksi khusus jika Anda berada di dalam ruangan, di luar ruangan, di dalam mobil, hingga prosedur evakuasi di pesisir pantai jika ada potensi Tsunami.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer class="mt-20 pt-8 border-t border-slate-800 text-center">
+            <p class="text-[10px] text-slate-600 uppercase tracking-[0.4em] mb-4">Developed by [kelompok 1 informatika expo B.6.1]</p>
+            <div class="inline-flex items-center gap-2 px-4 py-2 bg-red-600/10 rounded-full border border-red-600/20">
+                <span class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
+                <span class="text-[10px] font-bold text-red-400 uppercase tracking-widest">Kesiapsiagaan Adalah Kunci</span>
+            </div>
+        </footer>
+    </main>
+
+</body>
+</html>
